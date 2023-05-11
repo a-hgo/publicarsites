@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastre-se</title>
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                letter-spacing: 1px;
+                background-image: linear-gradient(to bottom, #16051d, #540075, #16051d);
+            }
+            .conteiner{
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .conteudo{
+                color: #ffffff;
+                background-color: #ffffff10;
+                position: absolute;
+                width: 875px;
+            }
+            .img{
+                width: 340px;
+                height: 680px;
+                float: right;
+            }
+            .forms{
+                padding: 50px;
+            }
+            .tabela{
+                width: 450px;
+            }
+            .titulo{
+                margin-top: 0;
+                margin-bottom: 0;
+                letter-spacing: 5px;
+                font-weight: lighter;
+                font-size: 40px;
+                font-family: Impact;
+            }
+            #chase{
+                color: #8d00c5;
+            }
+            .descricao{
+                margin-top: 5px;
+                margin-bottom: 20px;
+                font-size: 13px;
+            }
+            .subtitulo{
+                font-size: 12px;
+            }
+            .input{
+                width: 200px;
+                padding: 5px;
+                background: none;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid white;
+                color: white;
+                letter-spacing: 1px;
+                margin-bottom: 9px;
+            }
+            .data{
+                padding: 5px;
+                background: none;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid white;
+                color: white;
+                letter-spacing: 1px;
+            }
+            #email{
+                width: 425px;
+            }
+            #servidor{
+                padding: 5px;
+                background: none;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid white;
+                color: white;
+                letter-spacing: 1px;
+                margin-bottom: 29px;
+                width: 200px;
+            }
+            select option{
+                background-color: #16051d;
+            }
+            .radio{
+                font-size: 13px;
+            }
+            .termos{
+                color: rgb(112, 255, 133);
+            }
+            .enviar{
+                width: 250px;
+                height: 40px;
+                background-color:forestgreen;
+                color: #ffffff;
+                border: none;
+            }
+            .enviar:hover{
+                background-color: rgb(113, 176, 113);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="conteiner">
+            
+            <div class="conteudo">
+
+                <img src="img/1.jpg" class="img">
+
+                <div class="forms">
+                    <h1 class="titulo">CYBER<strong id="chase">CHASE</strong></h1>
+                    
+                    <p class="descricao">Cadastre-se para jogar</p>
+                    
+                    <form>
+                        <table class="tabela">
+                            <tr>
+                                <td>
+                                    <label for="nome" class="subtitulo">Nome</label><br>
+                                    <input type="text" name="nome" class="input" required><br><br>                                    
+                                </td>
+                                <td>
+                                    <label for="user" class="subtitulo">User</label><br>
+                                    <input type="text" name="user" class="input" required><br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="sexo" class="subtitulo">Sexo</label><br>
+                                    <input type="radio" id="masculino" name="sexo">
+                                    <label for="masculino" class="radio">Masculino</label><br>
+                                    <input type="radio" id="feminino" name="sexo">
+                                    <label for="feminino" class="radio">Feminino</label><br><br>                                   
+                                </td>
+                                <td>
+                                    <label for="data" class="subtitulo">Data de nascimento</label><br>
+                                    <input type="date" name="data" class="data" required><br><br>  
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label for="contato" class="subtitulo">Email</label><br>
+                                    <input type="email" name="contato" class="input" id="email" required><br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="tel" class="subtitulo">Telefone</label><br>
+                                    <input type="tel" name="tel" class="input" required><br><br>
+                                </td>
+                                <td>
+                                    <label for="servidor" class="subtitulo">País</label><br>
+                                    <select id="servidor" required>
+                                      <option>Brasil</option>
+                                      <option>Uganda</option>
+                                      <option>Outro</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="senha" class="subtitulo">Senha</label><br>
+                                    <input type="password" name="senha" class="input" required><br><br>
+                                </td>
+                                <td>
+                                    <label for="confirmarsenha" class="subtitulo">Confirmar senha</label><br>
+                                    <input type="password" name="confirmarsenha" class="input" required><br><br>
+                                </td>
+                            </tr>
+                        </table>
+                            
+                        <input type="checkbox" name="termos"required>
+                        <label for="termos" class="subtitulo">Concordo com os <a href="" class="termos">Termos de Segurança</a></label><br><br><br>
+                            
+                        <input type="submit" class="enviar" value="Cadastrar-se">
+                    </form> 
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
