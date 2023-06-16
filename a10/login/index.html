@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Animar - Login/Cadastro</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo.ico">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @font-face {
+            font-family: Dosis-ExtraBold;
+            src: url(../fonts/Dosis-ExtraBold.woff);
+        }
+        body{
+            background-color: #ececec;
+        }
+        header{
+            background-color: #4265e2;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 0 30px #a2a2a2;
+        }
+        #header{
+            display: flex;
+            justify-content: center;
+        }
+        #logo-nome{
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+        }
+        #logo{
+            float: left;
+        }
+        #logo img{
+            width: 70px;
+        }
+        #nome{
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            float: left;
+        }
+        #nome p{
+            font-family: Dosis-Extrabold;
+            font-size: 2.5em;
+            color: #fff;
+        }
+        nav{
+            display: flex;
+            float: right;
+            align-items: center;
+            margin-right: 3vw;
+        }
+        nav ul li{
+            display: inline;
+            margin: 5px;
+            font-family: Dosis-Extrabold;
+            color: #fff;
+            border-bottom: solid 2px #fff;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        nav ul li:hover{
+            background-color: #fff;
+            color: #4265e2;
+            transition: 0.8s;
+        }
+        nav a{
+            text-decoration: none;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #login-cadastro{
+            width: 90vw;
+        }
+
+        .header {
+                margin: 30px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 40px;
+                background-color: #e7d4b1 ;
+                padding: 0px;
+                width: 50%;
+                text-align: center;
+                border-radius: 10px;
+            }
+
+            input[type=text] {
+                border-radius: 15px;
+                border:none;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0px;
+                box-sizing: border-box;
+                background-color: rgb(241, 241, 241);
+            }
+
+            input[type=password] {
+                border-radius: 15px;;
+                border:none;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0px;
+                box-sizing: border-box;
+                background-color: rgb(241, 241, 241);
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%; /* Ajuste a altura conforme necessário */
+            }
+
+            input[type=submit] {
+                border-radius: 15px;
+                border:none;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0px;
+                box-sizing: border-box;
+                background-color: rgb(241, 241, 241);
+            }
+
+            input[type=submit]:focus {
+                background-color: #a5846c;
+                border-radius: 15px;
+                border:none;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0px;
+                box-sizing: border-box;
+            }
+            #formularios{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                padding: 20px;
+            }
+
+            div.formulario1{
+                background-color: #e4e3cb;
+                width: 30%;
+                border-radius: 15px;
+                padding: 10px 10px 100px 10px;
+            }
+
+            div.formulario2{
+                background-color: #e4e3cb;
+                width: 30%;
+                border-radius: 15px;
+                padding: 10px 10px 100px 10px;
+            }
+
+            p.TituloFormulario {
+                padding: 20px;
+                text-align: left;
+                font-size: 30px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 20px 10px;
+            }
+
+
+        footer{
+            font-family: Dosis-Extrabold;
+            color: #fff;
+            background-color: #ec8e00;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #parceiros{
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+        }
+        #parceiros img{
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+        }
+        #alunos{
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div id="logo-nome">
+                <div id="logo">
+                    <img src="../img/logo.png" alt="logo">
+                </div>
+                <div id="nome">
+                    <p>Animar</p>
+                </div>  
+            </div>             
+            <nav>
+                <ul>
+                    <a href="../index.html"><li>Home</li></a>
+                    <a href="../adotar/index.html"><li>Adotar</li></a>
+                    <a href="../login/index.html"><li>Login</li></a>
+                    <a href="../sobre/index.html"><li>Sobre</li></a>
+                </ul>
+            </nav>            
+        </div>
+    </header>
+    <main>
+        <div class="header">
+            Bem vindo ao Animar!
+        </div>
+        <div id="login-cadastro">
+            <div id="formularios">
+                <div class="formulario1">
+                    <p class="TituloFormulario">Login</p>
+                    <form>
+                        <input type="text" id="email" name="email" placeholder="email"><br>
+                        <input type="password" id="pwd" name="pwd" placeholder="Senha"><br>
+                        <input type="checkbox" id="manter" name="manter" value="mantido">
+                        <label for="manter">Manter-me logado</label><br>
+                        <div class="container">
+                            <input type="submit" value="Entrar">
+                        </div>
+                    </form>
+                </div>
+                <div class="formulario2">
+                    <p class="TituloFormulario">Cadastro</p>
+                    <form>
+                        <input type="text" id="email" name="email" placeholder="email"><br>
+                        <input type="text" id="nome" name="nome" placeholder="Insira seu nome completo"><br>
+                        <input type="text" id="nickname" name="nickname" placeholder="Insira seu nome de usuario que deseja"><br>
+                        <input type="password" id="pwd" name="pwd" placeholder="Senha"><br>
+                        <input type="password" id="pwdC" name="pwdC" placeholder="Confirme sua senha"><br>
+                        <input type="checkbox" id="manter" name="manter" value="mantido">
+                        <label for="manter">Manter-me logado</label><br>
+                        <div class="container">
+                            <input type="submit" value="Entrar">
+                        </div>
+                    </form>
+                </div>                 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="parceiros">
+            <h2>Parceiros</h2>
+            <img src="../img/par1.png" alt="Parceiro 1">
+            <img src="../img/par2.jpg" alt="Parceiro 2">
+            <img src="../img/par3.jpg" alt="Parceiro 3">
+        </div>
+        <div id="alunos">
+            <p>Alunos responsáveis pelo site: Arthur Henrique Godinho Oliveira, Ismael Marcos Junior, 
+            Thiago Medeiros de Sousa, Pedro Henrique Matsuda, Renato Coutinho Maione.</p>
+        </div>
+    </footer>   
+</body>
+</html>

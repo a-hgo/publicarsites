@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Dosis-ExtraBold;
+    src: url(../fonts/Dosis-ExtraBold.woff);
+}
+body{
+    background-color: #ececec;
+    overflow-x: hidden;
+}
+header{
+    background-color: #4265e2;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 30px #a2a2a2;
+}
+#header{
+    display: flex;
+    justify-content: center;
+}
+#logo-nome{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+#logo{
+    float: left;
+}
+#logo img{
+    width: 70px;
+}
+#nome{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    float: left;
+}
+#nome p{
+    font-family: Dosis-Extrabold;
+    font-size: 2.5em;
+    color: #fff;
+}
+nav{
+    display: flex;
+    float: right;
+    align-items: center;
+    margin-right: 3vw;
+}
+nav ul li{
+    display: inline;
+    margin: 5px;
+    font-family: Dosis-Extrabold;
+    color: #fff;
+    border-bottom: solid 2px #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+nav ul li:hover{
+    background-color: #fff;
+    color: #4265e2;
+    transition: 0.8s;
+}
+nav a{
+    text-decoration: none;
+}
+main{
+    display: flex;
+}
+#main{
+    display: flex;
+}
+#filtros{
+    height: 100%;
+    float: left;
+    background-color: #ffffff;
+    border-right: solid 1px #a8a8a8;
+}
+.filtro{
+    font-family: Dosis-Extrabold;
+    color: #909090;
+    width: 150px;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: solid 1px #c6c6c6;
+}
+#filtro-titulo{
+    font-family: Dosis-Extrabold;
+    color: #686868;
+    font-size: 1.3em;
+    cursor: auto;
+}
+.filtro summary{
+    color: #686868;
+}
+.filtro details input{
+    margin-top: 10px;
+}
+.filtro details label{
+    margin-top: 10px;
+}
+#Filtrar{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background-color: #748ce4;
+    color: #fff;
+    cursor: pointer;
+    font-family: Dosis-Extrabold;
+}
+#galeria{
+    width: 90%;    
+    float: left;
+}
+#galeria-titulo{
+    width: 100%;
+    padding: 1vw 4vw;
+    font-family: Dosis-Extrabold;
+    color: #686868;
+    font-size: 1.3em;
+}
+#galeria-pets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 4vw;
+    padding-top: 0;
+    gap: 4vw;
+}
+.pet{
+    width: 350px;
+    height: 490px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #a2a2a2;
+    background-color: #f7f7f7;
+}
+.pet figure{
+    width: 350px;
+    height: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+.pet figure img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.info{
+    padding: 10px 20px;
+    font-family: Dosis-Extrabold;
+}
+.nome-pet{
+    color: #e57c3a;
+    font-size: 1.8em;
+}
+.desc-pet{
+    color: #686868;
+    line-height: 30px;
+}
+.adotar{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: coral;
+    color: #fff;
+    cursor: pointer;
+}
+footer{
+    font-family: Dosis-Extrabold;
+    color: #fff;
+    background-color: #ec8e00;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#parceiros{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}
+#parceiros img{
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+#alunos{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}

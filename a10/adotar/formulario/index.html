@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Animar - Formulário de Aptidão</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Inter:wght@100;200;300;400;500;600&display=swap');
+*   {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#753a30;
+}
+    .container {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    }
+    .form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#753a30;
+    width: 50%;
+    }
+    .form {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color:#a5846c;
+        padding:0.5px;
+    }
+        .form-header{
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        }
+        
+        .login-button {
+        display: flex;
+        align-items: center;
+        }
+        .login-button {
+        display: flex;
+        align-items: center;
+        }
+        .login-button button { 
+        border: none;
+        background-color:#b79584;
+        padding: 0.3px 1px; 
+        border-radius: 5px;
+        cursor: pointer;
+        }
+        .login-button button:hover { 
+        background-color:#753a30;
+        }
+        .login-button button a {
+        text-decoration: none;
+        font-weight: 500;
+        color:#e4e3cb;
+        }
+        .form-header h1::after {
+        content:'';
+        display: block;
+        width: 15rem;
+        height: 0.5rem;
+        background-color:#753a30;
+        margin: 0 auto;
+        position: absolute;
+        border-radius: 2rem;
+        }
+        .input-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1px 0;
+        }
+        .input-box {
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 1px;
+        }
+        .input-box input {
+        margin: 0.5px 0;
+        padding: 0.5px 2px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 6px black;
+        }
+        .input-box input:hover{
+        background-color:darkgrey;
+        }
+        .input-box input:focus-visible {
+        outline: 1px solid ;
+        }
+        .input-box label,
+        .gender-title h4 {
+        font-size: 5px;
+        font-weight: 500;
+        color:#e4e3cb;
+        }
+        .input-box input::placeholder {
+        color:#a5846c;
+        }
+        .gender-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2px;
+        padding: 0 1px;
+        }
+        .gender-input {
+        display: flex;
+        align-items: center;
+        }
+        .gender-input input {
+        margin-right: 2px;
+        }
+        .gender-input label {
+        font-size:  5px;
+        font-weight: 500;
+        color:#e4e3cb;
+        }
+        .continue-button button {
+        width: 100%;
+        margin-top: 0.5px;
+        border: none;
+        background-color:#9c8874;
+        padding: 1px;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+        .continue-button button:hover{
+            background-color:#753a30;
+        }
+           
+        .continue-button button a { 
+        text-decoration: none; 
+        font-size: 5px;
+        font-weight: 400; 
+        color:#e4e3cb;
+        }
+        #cancelar{
+            background-color: darkred;
+            color: #fff;
+            position: fixed;
+            top: 2vw;
+            left: 2vw;
+            padding: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <a href="../index.html">
+        <div id="cancelar">
+            <h3>Cancelar</h3>
+        </div>       
+    </a>
+
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/undraw_good_doggy_re_eet7.svg">
+        </div>
+        
+        <div class="form"> 
+            <form action="#"> 
+                <div class="form-header">
+                  <div class="title"> 
+                    <h1> Formulário de Aptidão</h1>
+                  </div>
+            <div class="login-button"> 
+                <button><a href="login-button">ENTRAR</a></button>
+            </div>
+                </div>
+                <div class="input-group"> 
+                    <div class="input-box">
+                        <h3 class="dog-in-house">Você já tem um animal em casa? </h3>
+                        <h4 for="dog-in-house">Sim</h4>
+                        <input id="dog-in-house" type="radio" name="dog-in-house"  required>
+                        <h4 for="dog-in-house">Não</h4>
+                        <input id="dog-in-house" type="radio" name="dog-in-house"  required>
+                    </div>
+
+                    <div class="input-box">
+                        <h3 class="kids-in-house">Você tem filhos em casa? </h3>
+                        <h4 for="kids-in-house">Sim</h4>
+                        <input id="kids-in-house" type="radio" name="kids-in-house"  required>
+                        <h4 for="kids-in-house">Não</h4>
+                        <input id="kids-in-house" type="radio" name="kids-in-house"  required>
+                        <h3 class="kids-in-house">Se sim, quantos? </h3>
+                        <input type="number" name="quantos" min="1" max="15">
+                    </div>
+
+                    <div class="input-box">
+                        <h3 class="family">Quantas Pessoas moram em sua casa? </h3>
+                        <input type="number" name="quantos" min="1" max="30">
+                    </div>
+
+                    <div class="input-box">
+                    <h4 for="selecao"> Qual a renda mensal de sua familia</h4>
+                    <select name="selecao"> 
+                        <option value="1000,00 a 1500,00">1000,00 a 1500,00</option>
+                        <option value="2000,00 a 4000,00">2000,00 a 4000,00</option>
+                        <option value="5000,00 a 10000,00">5000,00 a 10000,00</option>
+                        <option value="mais de 10000,00">mais de 10000,00</option>
+                    </select>
+                    </div>
+
+                    <div class="input-box">
+                        <h3 class="house">Você possui casa propria ou mora de aluguel  </h3>
+                        <h4 for="house">Propria</h4>
+                        <input id="house" type="radio" name="house"  required>
+                        <h4 for="house">Aluguel</h4>
+                        <input id="house" type="radio" name="house"  required>
+                    </div>
+                </div>
+
+        <div class="gender-input">
+
+              <div class="gender-group">
+                <h4 for="important">Digite qual a importância de um animal em sua casa</h4>
+                <input id="important" type="text" name="important" placeholder="Escreva aqui" required>
+                    </div>
+              </div>
+        </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

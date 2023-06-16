@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Inter:wght@100;200;300;400;500;600&display=swap');
+*   {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#753a30;
+}
+    .container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    }
+    .form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#753a30;
+    width: 31rem;
+    }
+    .form {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color:#a5846c;
+        padding:3rem;
+    }
+        .form-header{
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: space-between;
+        }
+        
+        .login-button {
+        display: flex;
+        align-items: center;
+        }
+        .login-button {
+        display: flex;
+        align-items: center;
+        }
+        .login-button button { 
+        border: none;
+        background-color:#b79584;
+        padding: 0.4rem 5rem; 
+        border-radius: 5px;
+        cursor: pointer;
+        }
+        .login-button button:hover { 
+        background-color:#753a30;
+        }
+        .login-button button a {
+        text-decoration: none;
+        font-weight: 500;
+        color:#e4e3cb;
+        }
+        .form-header h1::after {
+        content:'';
+        display: block;
+        width: 5rem;
+        height: 0.3rem;
+        background-color:#753a30;
+        margin: 0 auto;
+        position: absolute;
+        border-radius: 10px;
+        }
+        .input-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1rem 0;
+        }
+        .input-box {
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 1.1rem;
+        }
+        .input-box input {
+        margin: 0.6rem 0;
+        padding: 0.8rem 1.2rem;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 6px black;
+        }
+        .input-box input:hover{
+        background-color:darkgrey;
+        }
+        .input-box input:focus-visible {
+        outline: 1px solid ;
+        }
+        .input-box label,
+        .gender-title h6 {
+        font-size: 0.90rem;
+        font-weight: 700;
+        color:#e4e3cb;
+        }
+        .input-box input::placeholder {
+        color:#a5846c;
+        }
+        .gender-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.62rem;
+        padding: 0 0.5rem;
+        }
+        .gender-input {
+        display: flex;
+        align-items: center;
+        }
+        .gender-input input {
+        margin-right: 0.35rem;
+        }
+        .gender-input label {
+        font-size: 0.81rem;
+        font-weight: 600;
+        color:#e4e3cb;
+        }
+        .continue-button button {
+        width: 100%;
+        margin-top: 2.5rem;
+        border: none;
+        background-color:#9c8874;
+        padding: 1.62rem;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+        .continue-button button:hover{
+            background-color:#753a30;
+        }
+           
+        .continue-button button a { 
+        text-decoration: none; 
+        font-size: 0.93rem;
+        font-weight: 500; 
+        color:#e4e3cb;
+        }
+        .top {
+            background-color:#a5846c;
+            padding: 10px;
+            position: relative, right;
+
+        }
+    
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+    
+        li {
+            display: inline-block;
+            padding: 10px;
+            font-weight: bold;
+        }
+    
+        li:hover {
+            background-color: #ccc;
+            cursor: pointer;
+        }
+    
+        img {
+            vertical-align: middle;
+            margin-top: 12px;   
+        }

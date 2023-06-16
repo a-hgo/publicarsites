@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="../img/logo.ico">
+    <title>Animar - Adote um Pet!</title>
+</head>
+<body>
+    <div id="conteiner">
+        <header>
+            <div id="header">
+                <div id="logo-nome">
+                    <div id="logo">
+                        <img src="../img/logo.png" alt="logo">
+                    </div>
+                    <div id="nome">
+                        <p>Animar</p>
+                    </div>  
+                </div>             
+                <nav>
+                    <ul>
+                        <a href="../index.html"><li>Home</li></a>
+                        <a href="../adotar/index.html"><li>Adotar</li></a>
+                        <a href="../login/index.html"><li>Login</li></a>
+                        <a href="../sobre/index.html"><li>Sobre</li></a>
+                    </ul>
+                </nav>            
+            </div>
+        </header>
+        <main>
+            <div id="main">
+                <aside id="filtros">
+                    <p id="filtro-titulo" class="filtro">Filtros</p>
+                    <div class="filtro">
+                        <details>
+                            <summary>Estado</summary>
+                            <input type="checkbox" name="estado" id="ma">
+                            <label for="am">MA</label><br>
+                            <input type="checkbox" name="estado" id="to">
+                            <label for="am">TO</label><br>
+                            <input type="checkbox" name="estado" id="pi">
+                            <label for="am">PI</label><br>
+                            <input type="checkbox" name="estado" id="ba">
+                            <label for="am">BA</label><br>
+                        </details>
+                    </div>
+                    <div class="filtro">
+                        <details>
+                            <summary>Cidade</summary>
+                            <input type="checkbox" name="cidade" id="palmas">
+                            <label for="palmas">Palmas</label><br>
+                            <input type="checkbox" name="cidade" id="porto-nacional">
+                            <label for="porto-nacional">Porto Nacional</label><br>
+                        </details>
+                    </div>
+                    <div class="filtro">
+                        <details>
+                            <summary>Espécie</summary>
+                            <input type="checkbox" name="especie" id="cachorros">
+                            <label for="cachorros">Cachorros</label><br>
+                            <input type="checkbox" name="especie" id="gatos">
+                            <label for="gatos">Gatos</label><br>
+                            <input type="checkbox" name="especie" id="roedores">
+                            <label for="roedores">Roedores</label><br>
+                            <input type="checkbox" name="especie" id="coelhos">
+                            <label for="coelhos">Coelhos</label><br>
+                        </details>
+                    </div>
+                    <div class="filtro">
+                        <details>
+                            <summary>Porte</summary>
+                            <input type="checkbox" name="porte" id="pequeno">
+                            <label for="pequeno">Pequeno</label><br>
+                            <input type="checkbox" name="porte" id="medio">
+                            <label for="medio">Médio</label><br>
+                            <input type="checkbox" name="porte" id="grande">
+                            <label for="grande">Grande</label><br>
+                        </details>
+                    </div>
+                    <div class="filtro">
+                        <details>
+                            <summary>Sexo</summary>
+                            <input type="checkbox" name="sexo" id="macho">
+                            <label for="macho">Macho</label><br>
+                            <input type="checkbox" name="sexo" id="femea">
+                            <label for="femea">Fêmea</label><br>
+                        </details>
+                    </div>
+                    <div class="filtro">
+                        <details>
+                            <summary>Idade</summary>
+                            <input type="checkbox" name="idade" id="filhotes">
+                            <label for="filhotes">0 a 6 meses (filhotes)</label><br>
+                            <input type="checkbox" name="idade" id="jovens">
+                            <label for="jovens">7 meses a 5 anos (jovens)</label><br>
+                            <input type="checkbox" name="idade" id="adultos">
+                            <label for="adultos">6 a 10 anos (adultos)</label><br>
+                            <input type="checkbox" name="idade" id="idosos">
+                            <label for="idosos">11 anos ou mais (idosos)</label><br>
+                        </details>
+                    </div>
+                    <div>
+                        <input type="submit" name="Filtrar" id="Filtrar" value="Filtrar">
+                    </div>
+                </aside>
+                <aside id="galeria">                
+                    <div id="galeria-titulo">
+                        <p>Pets sem lar</p>
+                    </div>
+                    <div id="galeria-pets">
+                        <div class="pet">
+                            <figure>
+                                <img src="./img/1.jpg" alt="foto do pet">
+                            </figure>
+                            <div class="info">
+                                <p class="nome-pet">Abacate</p>
+                                <p class="desc-pet">Nascido em Brasília - DF</p>
+                                <a href="./formulario/index.html"><button class="adotar">Adotar</button></a>                        
+                            </div>
+                        </div>
+                        <div class="pet">
+                            <figure>
+                                <img src="./img/2.jpg" alt="foto do pet">
+                            </figure>
+                            <div class="info">
+                                <p class="nome-pet">Scott</p>
+                                <p class="desc-pet">Nascido em Palmas - TO</p>
+                                <a href="./formulario/index.html"><button class="adotar">Adotar</button></a>                        
+                            </div>
+                        </div>
+                        <div class="pet">
+                            <figure>
+                                <img src="./img/3.jpg" alt="foto do pet">
+                            </figure>
+                            <div class="info">
+                                <p class="nome-pet">Pidão</p>
+                                <p class="desc-pet">Nascido em Goiânia - GO</p>
+                                <a href="./formulario/index.html"><button class="adotar">Adotar</button></a>                        
+                            </div>
+                        </div>
+                        <div class="pet">
+                            <figure>
+                                <img src="./img/4.jpg" alt="foto do pet">
+                            </figure>
+                            <div class="info">
+                                <p class="nome-pet">Cachorro</p>
+                                <p class="desc-pet">Nascido em Brasília - DF</p>
+                                <a href="./formulario/index.html"><button class="adotar">Adotar</button></a>                        
+                            </div>
+                        </div>
+                        <div class="pet">
+                            <figure>
+                                <img src="./img/5.jpg" alt="foto do pet">
+                            </figure>
+                            <div class="info">
+                                <p class="nome-pet">Cachorro</p>
+                                <p class="desc-pet">Nascido em Brasília - DF</p>
+                                <a href="./formulario/index.html"><button class="adotar">Adotar</button></a>                        
+                            </div>
+                        </div>
+                        <div class="pet">
+                            <figure>
+                                <img src="./img/6.jpg" alt="foto do pet">
+                            </figure>
+                            <div class="info">
+                                <p class="nome-pet">Cachorro</p>
+                                <p class="desc-pet">Nascido em Brasília - DF</p>
+                                <a href="./formulario/index.html"><button class="adotar">Adotar</button></a>                        
+                            </div>
+                        </div>
+                        <div class="pet">
+                            <figure>
+                                <img src="./img/7.jpg" alt="foto do pet">
+                            </figure>
+                            <div class="info">
+                                <p class="nome-pet">Cachorro</p>
+                                <p class="desc-pet">Nascido em Brasília - DF</p>
+                                <a href="./formulario/index.html"><button class="adotar">Adotar</button></a>                        
+                            </div>
+                        </div>
+                        <div class="pet">
+                            <figure>
+                                <img src="./img/8.jpg" alt="foto do pet">
+                            </figure>
+                            <div class="info">
+                                <p class="nome-pet">Cachorro</p>
+                                <p class="desc-pet">Nascido em Brasília - DF</p>
+                                <a href="./formulario/index.html"><button class="adotar">Adotar</button></a>                     
+                            </div>
+                        </div>
+                        <div class="pet">
+                            <figure>
+                                <img src="./img/9.jpg" alt="foto do pet">
+                            </figure>
+                            <div class="info">
+                                <p class="nome-pet">Cachorro</p>
+                                <p class="desc-pet">Nascido em Brasília - DF</p>
+                                <a href="./formulario/index.html"><button class="adotar">Adotar</button></a>                        
+                            </div>
+                        </div>                        
+                    </div>
+                </aside>
+            </div>
+        </main>    
+        <footer>
+            <div id="parceiros">
+                <h2>Parceiros</h2>
+                <img src="../img/par1.png" alt="Parceiro 1">
+                <img src="../img/par2.jpg" alt="Parceiro 2">
+                <img src="../img/par3.jpg" alt="Parceiro 3">
+            </div>
+            <div id="alunos">
+                <p>Alunos responsáveis pelo site: Arthur Henrique Godinho Oliveira, Ismael Marcos Junior, 
+                Thiago Medeiros de Sousa, Pedro Henrique Matsuda, Renato Coutinho Maione.</p>
+            </div>
+        </footer>   
+    </div>
+
+</body>
+</html>
