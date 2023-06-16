@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividade 8</title>
+        <style>
+            body{
+                margin: 0;
+                background-color: #0d1117;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .conteiner{
+                width: 100vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+            }
+            .header{
+                background-color: #161b22;
+                width: 100vw;
+                height: 50px;
+                padding: 20px;
+            }
+            .logo{
+                width: 12%;
+                height: 100%;
+                float: left;
+                display: flex;
+                justify-content: center;
+            }
+            .titulo{
+                color: #ffffff;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 40px;
+                letter-spacing: 4px;
+                float: left;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .search{
+                width: 58%;
+                height: 100%;
+                float: left;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .searchbar{
+                width: 80%;
+                height: 30px;
+                background: none;
+                border: none;
+                outline: none;
+                border-bottom: solid 1px #ffffff;
+                color: #ffffff;
+                letter-spacing: 3px;
+                font-size: large;
+            }
+            .config{
+                width: 85%;
+                height: 100%;
+                display: flex;
+                float: right;
+                align-items: center;
+                justify-content: center;
+            }
+            .back{
+                background-color: #161b22;
+                border-radius: 15px;
+                padding: 20px;
+                margin: 15px;
+            }
+            .subtitulo{
+                color: #cccccc;
+                font-size: large;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .input{
+                width: 900px;
+                padding: 15px;
+                color: #ffffff;
+                background-color: #21272f;
+                border: none;
+                outline: none;
+                font-size: large;
+                letter-spacing: 2px;
+                margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 15px;
+                margin-top: 10px;
+            }
+            #sobre{
+                height: 100px;
+                margin-top: 10px;
+            }
+            #enviar{
+                color: #ffffff;
+                width: 200px;
+                height: 60px;
+                letter-spacing: 2px;
+                font-size: large;
+                background-color: forestgreen;
+                border: none;
+                margin-left: 50%;
+                transform: translate(-50%);
+                margin-bottom: 100px;
+                margin-top: 30px;
+                border-radius: 10px
+            }
+            #enviar:hover{
+                background-color: rgb(118, 198, 118);
+            }
+            #titulo{
+                color: #cccccc;
+                margin: 15px;
+                letter-spacing: 2px;
+                margin-top: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+           <div class="header">
+                <div class="logo">
+                    <h1 class="titulo">FÓRUM</h1>
+                </div>
+                <div class="search">
+                    <input class="searchbar" placeholder="Pesquisar...">
+                </div>
+           </div> 
+        </header>
+        <div class="conteiner">
+            <div class="config">
+                <form>
+                    <h2 id="titulo">Cadastre-se para comentar no fórum!</h2>
+                    <div class="back">
+                        <label class="subtitulo">Nome</label><br>
+                        <input type="text" class="input"><br>
+                    </div>
+                    <div class="back">
+                        <label class="subtitulo">Email</label><br>
+                        <input type="email" class="input"><br>
+                    </div>
+                    <div class="back">
+                        <label class="subtitulo">Conte um pouco sobre você</label><br>
+                        <textarea class="input" id="sobre"></textarea><br>
+                    </div>
+                    <div class="back">
+                        <label class="subtitulo">Senha</label><br>
+                        <input type="password" class="input"><br>
+                    </div>
+                    <div class="back">
+                        <label class="subtitulo">Confirme a senha</label><br>
+                        <input type="password" class="input"><br>
+                    </div>
+
+
+                    <input type="submit" id="enviar"><br>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
